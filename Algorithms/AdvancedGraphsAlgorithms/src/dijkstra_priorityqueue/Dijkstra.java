@@ -1,5 +1,3 @@
-//priority queue has bugs.
-
 package dijkstra_priorityqueue;
 
 import java.util.ArrayList;
@@ -8,6 +6,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.PriorityQueue;
 
 import org.apache.commons.lang3.StringUtils;
 
@@ -81,7 +80,7 @@ public class Dijkstra {
 
         for (int i = 0; i < nodes.length; i++) {
         	
-            System.out.printf("Distance from %d to %d: %d; ", source.getId(), nodes[i].getId(), nodes[i].getDijkstraDistance());
+            System.out.printf("Distance from %d to %d: %f; ", source.getId(), nodes[i].getId(), nodes[i].getDijkstraDistance());
             System.out.printf("Shortest Path: %s\n", buildPath(graph, source, nodes[i]));
         }
 	}
