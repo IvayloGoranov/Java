@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="205.0" prefWidth="220.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LevelOneController">
+   <children>
+      <AnchorPane layoutX="-1.0" layoutY="3.0" prefHeight="415.0" prefWidth="390.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="418.0" layoutY="-2.0" onMouseExited="#onMouseExited" stroke="BLACK" strokeType="INSIDE" width="389.0" />
+            <ToggleButton fx:id="toggleStart" layoutX="7.0" layoutY="11.0" mnemonicParsing="false" onAction="#onStart" prefHeight="25.0" prefWidth="45.0" text="Start">
+               <effect>
+                  <GaussianBlur radius="0.48" />
+               </effect></ToggleButton>
+            <Button fx:id="buttonFinish" layoutX="308.0" layoutY="313.0" mnemonicParsing="false" onAction="#onFinish" text="Finish" />
+            <Rectangle fx:id="obstacle2" arcHeight="5.0" arcWidth="5.0" fill="#ff251f" height="33.0" layoutY="84.0" stroke="RED" strokeType="INSIDE" width="59.0" />
+            <Rectangle fx:id="obstacle3" arcHeight="5.0" arcWidth="5.0" fill="#ff251f" height="33.0" layoutX="95.0" layoutY="108.0" stroke="RED" strokeType="INSIDE" width="59.0" />
+            <Arc fx:id="obstacle1" fill="#ff251f" layoutX="26.0" layoutY="348.0" length="270.0" radiusX="72.0" radiusY="67.0" rotate="-45.0" startAngle="-145.8" stroke="RED" strokeType="INSIDE" type="ROUND" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="334.0" layoutX="60.0" onMouseExited="#onMouseExited" stroke="BLACK" strokeType="INSIDE" width="45.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="352.0" layoutX="148.0" layoutY="58.0" stroke="BLACK" strokeType="INSIDE" width="45.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="33.0" layoutX="148.0" layoutY="25.0" stroke="BLACK" strokeType="INSIDE" width="211.0" />
+            <Circle fx:id="obstacle4" fill="#ff361e" layoutX="254.0" layoutY="11.0" radius="5.0" stroke="#ee0707" strokeType="INSIDE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
